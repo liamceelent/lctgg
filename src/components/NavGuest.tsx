@@ -40,6 +40,7 @@ const NavGuest = () => {
                     </Typography>
                     <Button color="inherit" onClick={() => handleMenuClick("/users/login")}>Login</Button>
                     <Button color="inherit" onClick={() => handleMenuClick("/users/register")}>Register</Button>
+                    
                 </Toolbar>
             </AppBar>
             <Menu
@@ -49,7 +50,9 @@ const NavGuest = () => {
                 onClose={handleClose}
             >
                 <MenuItem onClick={() => handleMenuClick("/")}>Home</MenuItem>
-                <MenuItem onClick={() => handleMenuClick("/petitions")}>Petitions</MenuItem>
+                <MenuItem onClick={() => handleMenuClick("/projects")}>Projects</MenuItem>
+                <MenuItem onClick={() => handleMenuClick("/LiamCV")}>Liams CV</MenuItem>
+
             </Menu>
         </Box>
     );

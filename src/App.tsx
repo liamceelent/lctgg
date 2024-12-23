@@ -3,7 +3,9 @@ import './App.css';
 
 import NotFound from "./components/NotFound";
 import Register from './components/Register';
-import Home from './components/Home';
+import HomePetition from './components/Home';
+import Home from './CVWebsite/Home';
+
 import Login from './components/Login';
 import MyProfile from './components/MyProfile';
 import Edit from './components/Edit';
@@ -14,11 +16,13 @@ import MyPetitions from './components/MyPetitions';
 import EditPetition from './components/EditPetition';
 import NavGuest from './components/NavGuest';
 import NavLogged from './components/NavLogged';
+import LiamCV from './CVWebsite/LiamCV';
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Cookies from 'js-cookie';
-function App() {
+import Projects from './CVWebsite/Projects';
 
+function App() {
   return (
     <div className="App">
       <Router>
@@ -30,6 +34,8 @@ function App() {
             <Route path="/users/register" element={<Register />} />
             <Route path="/users/login" element={<Login />} />
             <Route path="/" element={<Home />} />
+            <Route path="/LiamCV" element={<LiamCV />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/users/:id" element={<MyProfile />} />
             <Route path="/users/edit/:id" element={<Edit />} />
             <Route path="/petitions" element={<Petitions />} />
