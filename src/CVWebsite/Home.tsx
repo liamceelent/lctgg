@@ -1,4 +1,4 @@
-import backgroundImage from '.././images/petition.jpg';
+
 
 const Home = () => {
 

@@ -5,6 +5,8 @@ import NotFound from "./components/NotFound";
 import Register from './components/Register';
 import HomePetition from './components/Home';
 import Home from './CVWebsite/Home';
+import Nav from './CVWebsite/Nav';
+
 
 import Login from './components/Login';
 import MyProfile from './components/MyProfile';
@@ -28,7 +30,7 @@ function App() {
       <Router>
 
         {Cookies.get('X-Authorization') != null ? <NavLogged /> : <NavGuest />}
-        
+        <Nav></Nav>
         <div>
           <Routes>
             <Route path="/users/register" element={<Register />} />

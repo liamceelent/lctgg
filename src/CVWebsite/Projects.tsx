@@ -28,10 +28,10 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "E-commerce App",
-    description: "An e-commerce application with shopping cart and payment integration.",
+    title: "Petition website",
+    description: "Full stack petiton website.",
     imageUrl: "https://via.placeholder.com/600x300?text=E-commerce+App",
-    link: "/ecommerce",
+    link: "/petitions",
   },
   {
     id: 3,

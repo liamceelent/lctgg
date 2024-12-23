@@ -36,10 +36,8 @@ const NavGuest = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        PetitionHub
+                        LCTGG
                     </Typography>
-                    <Button color="inherit" onClick={() => handleMenuClick("/users/login")}>Login</Button>
-                    <Button color="inherit" onClick={() => handleMenuClick("/users/register")}>Register</Button>
                     
                 </Toolbar>
             </AppBar>
@@ -50,7 +48,9 @@ const NavGuest = () => {
                 onClose={handleClose}
             >
                 <MenuItem onClick={() => handleMenuClick("/")}>Home</MenuItem>
-                <MenuItem onClick={() => handleMenuClick("/petitions")}>Petitions</MenuItem>
+                <MenuItem onClick={() => handleMenuClick("/projects")}>Projects</MenuItem>
+                <MenuItem onClick={() => handleMenuClick("/LiamCV")}>Liams CV</MenuItem>
+
             </Menu>
         </Box>
     );
