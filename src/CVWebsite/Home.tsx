@@ -4,7 +4,12 @@ const Home = () => {
 
 
     return (
-        <p>hi</p>
+        <div>
+            <p>picture here</p>
+            <p> about me </p>
+            <p>sport photos</p>
+            <p> hobie photos</p>
+        </div>
     )
 }
 
